@@ -57,10 +57,11 @@ print(f"Greatest Decrease in Profits: {min_date} (${min(average_change)})")
 
 #Open a text file
 with open('results.txt', 'w') as file:
-    file.write("Financial Analysis")
-    file.write("--------------------------------------------")
-    file.write(f"Total Months: {len(months)}")
-    file.write(f"Total: ${sum(profit_losses)}")
-    file.write(f"Average Change: ${sum(average_change)/len(average_change):.2f}")
-    file.write(f"Greatest Increase in Profits: {max_date} (${max(average_change)})")
-    file.write(f"Greatest Decrease in Profits: {min_date} (${min(average_change)})")
+    for line_number, line in enumerate(file, start=1):
+        file.write("Financial Analysis")
+        file.write("--------------------------------------------")
+        file.write(f"Total Months: {len(months)}")
+        file.write(f"Total: ${sum(profit_losses)}")
+        file.write(f"Average Change: ${sum(average_change)/len(average_change):.2f}")
+        file.write(f"Greatest Increase in Profits: {max_date} (${max(average_change)})")
+        file.write(f"Greatest Decrease in Profits: {min_date} (${min(average_change)})")
