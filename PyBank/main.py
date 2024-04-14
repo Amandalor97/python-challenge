@@ -3,7 +3,6 @@ import csv
 
 budget_data = os.path.join("Resources", "budget_data.csv")
 
-#print("Hello world")
 
 months = []
 profit_losses = []
@@ -18,21 +17,18 @@ with open(budget_data) as csvfile:
 
 #Total number of months
 #Net total amount of Profit/Losses
-#Average change
-
+#Average change = difference between the profit/loss value of the current month and the profit/loss value of the previous month
 
     for row in csvreader:
-        #print(row[1])
-        #months=row[0]
-        #print(months)
         months.append(row[0])
         profit_losses.append(int(row[1]))
     
     for x in range(1, len(profit_losses)): 
-        average_change.append((int(profit_losses[x])- int(profit_losses[x-1])))
+         average_change.append((int(profit_losses[x])- int(profit_losses[x-1])))
 
-#Greatest increase
+#Greatest increase 
 #Greatest decrease
+#Using the average change we found earlier to determine the greatest increase and greatest decrease
 
 max_index = average_change.index(max(average_change))
 max_index += 1
@@ -43,10 +39,6 @@ min_index += 1
 min_date = months[min_index]
 
 
-#print(len(months))
-#print(months)
-#print(profit_losses)
-#print(sum(profit_losses))
 print("Financial Analysis")
 print("--------------------------------------------")
 print(f"Total Months: {len(months)}")

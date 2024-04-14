@@ -5,9 +5,9 @@ election_data = os.path.join("Resources","election_data.csv")
 
 total_votes = []
 candidates = []
-percentage_votes = []
-count_votes = []
 unique_candidates = []
+count_votes = []
+percentage_votes = []
 votes = 0
 
 #Skipping the headrow
