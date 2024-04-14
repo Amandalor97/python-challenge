@@ -52,7 +52,7 @@ print(f"Winner: {Winner}")
 print("-------------------------------------------")
 
 #Open a text file
-with open('results.txt', 'w') as file:
+with open('election_results.txt', 'w') as file:
      file.write("Election Results")
      file.write("-------------------------------------------")
      file.write(f"Total Votes: {len(total_votes)}")
