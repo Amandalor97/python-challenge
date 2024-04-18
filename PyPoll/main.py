@@ -53,7 +53,7 @@ print("-------------------------------------------")
 
 #Open a text file
 with open('election_results.txt', 'w') as file:
-     file.write("Election Results: \n")
+     file.write("Election Results \n")
      file.write("------------------------------------------- \n")
      file.write(f"Total Votes: {len(total_votes)} \n")
      file.write("------------------------------------------- \n")

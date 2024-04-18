@@ -49,7 +49,7 @@ print(f"Greatest Decrease in Profits: {min_date} (${min(average_change)})")
 
 #Open a text file
 with open('results.txt', 'w') as file:
-    file.write("Financial Analysis: \n")
+    file.write("Financial Analysis \n")
     file.write("-------------------------------------------- \n")
     file.write(f"Total Months: {len(months)} \n")
     file.write(f"Total: ${sum(profit_losses)} \n")
