@@ -57,7 +57,8 @@ with open('election_results.txt', 'w') as file:
      file.write("------------------------------------------- \n")
      file.write(f"Total Votes: {len(total_votes)} \n")
      file.write("------------------------------------------- \n")
-     file.write(f"{unique_candidates[i]}: {percentage_votes[i]:.3f}% ({count_votes[i]}) \n")
+     for i in range(len(unique_candidates)):
+        file.write(f"{unique_candidates[i]}: {percentage_votes[i]:.3f}% ({count_votes[i]}) \n")
      file.write("------------------------------------------- \n")
      file.write(f"Winner: {Winner} \n")
      file.write("------------------------------------------- \n")
