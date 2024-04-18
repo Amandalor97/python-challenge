@@ -2,6 +2,9 @@
 
 Helllo, in this repository you will find my homework for the Module 3 Challenge. This homework has been made with the help of differents sources: Tutor, Xpert Learning Assistant, Stack Overflow, Geeksforgeeks, TA & and myself Amanda Lor.
 
+
+
+
 Instructions:
 
 PyBank Instructions:
@@ -35,6 +38,9 @@ Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
 
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+
+
+
 
 PyPoll Instructions:
 In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
@@ -73,6 +79,9 @@ Winner: Diana DeGette
 -------------------------
 
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+
+
+
 
 Breakdown of the homework: 
 
